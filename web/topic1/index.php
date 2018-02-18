@@ -10,4 +10,6 @@
   <!-- end container -->
 </div>
 
+<script src="/topic1/js/ballClock.js"></script>
+
 <?php include("../includes/footer.php");?>
