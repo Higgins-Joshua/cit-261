@@ -1,0 +1,217 @@
+/* CSS for lesson below:  */
+
+/* bouncing balls */
+#balls {
+    text-align: center;
+    height: 255px;
+}
+
+#balls ul {
+    text-align: center;
+    list-style: none;
+}
+
+#balls ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    /* http://cubic-bezier.com/#.25,.33,.51,1.3 */
+    -webkit-animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite alternate;
+            animation: bounce-balls 1.2s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite alternate;
+}
+
+#balls ul li:nth-child(1) {
+    background: red;
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+}
+
+#balls ul li:nth-child(2) {
+    background: orange;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+
+#balls ul li:nth-child(3) {
+    background: yellow;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+}
+
+#balls ul li:nth-child(4) {
+    background: green;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+}
+
+#balls ul li:nth-child(5) {
+    background: blue;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+}
+
+#balls ul li:nth-child(6) {
+    background: purple;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+}
+
+/* The @keyframes CSS at-rule controls the intermediate steps 
+in a CSS animation sequence by defining styles for keyframes 
+(or waypoints) along the animation sequence. */
+@-webkit-keyframes bounce-balls {
+    30% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    60% {
+        -webkit-transform: translateY(205px);
+                transform: translateY(205px);
+    }
+    80% {
+        -webkit-transform: translateY(190px);
+                transform: translateY(190px);
+    }
+    100% {
+        -webkit-transform: translateY(195px);
+                transform: translateY(195px);
+    }
+}
+
+@keyframes bounce-balls {
+    30% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    60% {
+        -webkit-transform: translateY(205px);
+                transform: translateY(205px);
+    }
+    80% {
+        -webkit-transform: translateY(190px);
+                transform: translateY(190px);
+    }
+    100% {
+        -webkit-transform: translateY(195px);
+                transform: translateY(195px);
+    }
+}
+/* end bouncing balls */
+
+/* animatedCircle */
+#animatedCircle {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    /* -webkit-animation-name: animatedCircle;
+    -webkit-animation-duration: 2s;
+    animation-name: animatedCircle;
+    animation-duration: 2s; */
+
+    -webkit-animation: animatedCircle 2s infinite alternate;
+            animation: animatedCircle 2s infinite alternate;
+}
+
+@-webkit-keyframes animatedCircle {
+    from {background-color:  #eaf2f8 ;}
+    to {background-color:  #154360 ;}
+}
+
+@keyframes animatedCircle {
+    from {background-color:  #eaf2f8 ;}
+    to {background-color:  #154360 ;}
+}
+/* end animatedCircle */
+
+/* rightArrow */
+.rightArrow.horizTranslate {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    margin-left: 50% !important;
+}
+/* end rightArrow */
+
+/* transitionSquare */
+.transitionSquare {
+    width: 100px;
+    height: 100px;
+    background: #851c75;
+    -webkit-transition: width 2s, background-color 2s ease;
+            transition: width 2s, background-color 2s ease;
+}
+
+.transitionSquare:hover {
+    width: 400px;
+    background: #20a055;
+}
+/* end transitionSquare */
+
+/* transitionSquare2 */
+.transitionSquare2 {
+    width: 100px;
+    height: 100px;
+    background: #851c75;
+    -webkit-transition: width 2s, background-color 2s ease;
+            transition: width 2s, background-color 2s ease;
+}
+
+.transitionSquare2-active {
+    width: 400px;
+    background: #20a055;
+}
+/* end transitionSquare2 */
+
+/* transform */
+.transform {
+    background-color: #bd4015;
+    height: 100px;
+    width: 100px;
+    animation: skew 2s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+}
+
+@keyframes skew {
+    0% {
+      transform: skewX(40deg);
+    }
+    100% {
+      transform: skewX(-40deg);
+    }
+}
+/* end transform */
+
+/* animationEx */
+.animationEx {
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    background-color: red;
+    -webkit-animation: stretch 2s infinite alternate;
+            animation: stretch 2s infinite alternate;
+}
+
+@keyframes stretch {
+    0% {
+      transform: scale(.3);
+      background-color: red;
+      border-radius: 100%;
+    }
+    50% {
+      background-color: orange;
+    }
+    100% {
+      transform: scale(1.5);
+      background-color: yellow;
+    }
+}
+/* end animationEx */
