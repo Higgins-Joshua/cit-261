@@ -109,6 +109,7 @@ class BallClockMins extends BallClock {
 }
 
 document.getElementsByClassName('firstMode')[0].onclick = function() {
+    document.getElementById("firstModeResponse").removeAttribute("style");
     var ballsInput = parseInt(document.getElementsByClassName('ballsInputFirst')[0].value);
 
     if (!isNaN(ballsInput) && ballsInput >= 27 && ballsInput <= 127) {
@@ -125,6 +126,7 @@ document.getElementsByClassName('firstMode')[0].onclick = function() {
 }
 
 document.getElementsByClassName('secondMode')[0].onclick = function() {
+    document.getElementById("secondModeResponse").removeAttribute("style");
     var ballsInput = parseInt(document.getElementsByClassName('ballsInputSecond')[0].value);
     var minutes = parseInt(document.getElementsByClassName('minsInputSecond')[0].value);
 
