@@ -10,7 +10,7 @@
                 <p>The ball clock is a simple device which keeps track of the passing minutes by moving ball-bearings. Each minute, a rotating arm removes a ball bearing from the queue at the bottom, raises it to the top of the clock and deposits it on a track leading to indicators displaying minutes, five-minutes, and hours.</p>
                 <img class="img-fluid" src="img/ball-clock.jpg">
             </div>
-            <p>Most commercially available ball clocks do not incorporate a date indication, although this would be simple to do with the addition of further carry and indicator tracks. As the balls migrate through the mechanism of the clock, the order they are found in can be used to determine the time elapsed since the clock had some specific ordering. The length of time which can be measured is limited because the orderings of the balls eventually begin to repeat. Your program must compute the time before repetition, which varies according to the total number of balls present.</P>
+            <p>Most commercially available ball clocks do not incorporate a date indication, although this would be simple to do with the addition of further carry and indicator tracks. As the balls migrate through the mechanism of the clock, the order they are found in can be used to determine the time elapsed since the clock had some specific ordering. The length of time which can be measured is limited because the orderings of the balls eventually begin to repeat.</P>
             <h3>Below you can enter the amount of balls or balls and minutes</h3>
             <p>Valid numbers of balls are in the range 27 to 127.</p>
             <p>1.) The first mode takes a single parameter specifying the number of balls and reports the number
