@@ -10,7 +10,6 @@ class BallClock {
     }
 
     startClock() {
-        // # also I needed to make sure that it was added one to the minute track, changed to while true
         while (true) {
             this.addOneMin(this.main.shift());
             if (this.checkReachedStart() === true) {
@@ -37,7 +36,6 @@ class BallClock {
         return true;
     }
 
-    // # the error existed here: I was not doing <= so it was off by one
     initBallArray() {
         var ballArray = [];
         for (var i = 1; i <= this.ballsCount; i++) {
@@ -110,5 +108,38 @@ class BallClockMins extends BallClock {
     }
 }
 
-//     new BallClock(45).startClock();
-//     new BallClockMins(30, 325).startClock();
+document.getElementsByClassName('firstMode')[0].onclick = function() {
+    var ballsInput = parseInt(document.getElementsByClassName('ballsInputFirst')[0].value);
+
+    if (!isNaN(ballsInput) && ballsInput >= 27 && ballsInput <= 127) {
+        var run = new BallClock(ballsInput).startClock();
+        document.getElementById("firstModeResponse").style.color = "green";
+        document.getElementById("firstModeResponse").innerHTML = run;
+        document.getElementsByClassName('ballsInputFirst')[0].value = "";
+    }
+    else {
+        document.getElementById("firstModeResponse").style.color = "red";
+        document.getElementById("firstModeResponse").innerHTML = "Your input is incorrect! Correct balls range is 27 - 127";
+        document.getElementsByClassName('ballsInputFirst')[0].value = "";
+    }
+}
+
+document.getElementsByClassName('secondMode')[0].onclick = function() {
+    var ballsInput = parseInt(document.getElementsByClassName('ballsInputSecond')[0].value);
+    var minutes = parseInt(document.getElementsByClassName('minsInputSecond')[0].value);
+
+    if (!isNaN(ballsInput) && !isNaN(minutes) && ballsInput >= 27 && ballsInput <= 127) {
+        var run = new BallClockMins(ballsInput, minutes).startClock();
+        document.getElementById("secondModeResponse").style.color = "green";
+        document.getElementById("secondModeResponse").style.float = "right";
+        document.getElementById("secondModeResponse").innerHTML = JSON.stringify(run);
+        document.getElementsByClassName('ballsInputSecond')[0].value = "";
+        document.getElementsByClassName('minsInputSecond')[0].value = "";
+    }
+    else {
+        document.getElementById("secondModeResponse").style.color = "red";
+        document.getElementById("secondModeResponse").innerHTML = "Your input is incorrect! Correct balls range is 27 - 127";
+        document.getElementsByClassName('ballsInputSecond')[0].value = "";
+        document.getElementsByClassName('minsInputSecond')[0].value = "";
+    }
+}
