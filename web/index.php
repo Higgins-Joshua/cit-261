@@ -6,8 +6,8 @@
             <h3>Home page for all 13 topics</h3>
             <hr/>
             <ol>
-                <li><a class="btn" href="/topic1">Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</a></li>
-                <li><a class="btn" href="/topic2">Object Creation Functions, Inheritance, Properties, Methods, Instantiation</a></li>
+                <li><a class="btn" href="/topic1-2">Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</a></li>
+                <li><a class="btn" href="/topic1-2">Object Creation Functions, Inheritance, Properties, Methods, Instantiation</a></li>
                 <li><a class="btn" href="/topic3">JSON Parse, Stringify</a></li>
                 <li><a class="btn" href="/topic4">Using XMLHTTPRequest to Consume a JSON Web Service</a></li>
                 <li><a class="btn" href="/topic5">Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</a></li>

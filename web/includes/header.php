@@ -23,8 +23,8 @@
             </div>
             <input type="checkbox" id="nav-check">
             <div class="nav-links">
-                <a href="/topic1">Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</a>
-                <a href="/topic2">Object Creation Functions, Inheritance, Properties, Methods, Instantiation</a>
+                <a href="/topic1-2">Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</a>
+                <a href="/topic1-2">Object Creation Functions, Inheritance, Properties, Methods, Instantiation</a>
                 <a href="/topic3">JSON Parse, Stringify</a>
                 <a href="/topic4">Using XMLHTTPRequest to Consume a JSON Web Service</a>
                 <a href="/topic5">Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</a>
