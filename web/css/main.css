@@ -96,7 +96,7 @@ hr {
     border-color: #0275d8;
 }
 
-.primary:hover {
+.primary:hover:not([disabled]) {
     background-color: #0275D8;
     color: #FAFCFE;
     cursor: pointer;
@@ -142,4 +142,8 @@ hr {
         border-top-right-radius: 0.25rem;
         border-bottom-right-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.searchUser:disabled {
+    background: #ddd;
 }

@@ -25,10 +25,10 @@
             <div class="nav-links">
                 <a href="/topic1-2">Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</a>
                 <a href="/topic1-2">Object Creation Functions, Inheritance, Properties, Methods, Instantiation</a>
-                <a href="/topic3">JSON Parse, Stringify</a>
-                <a href="/topic4">Using XMLHTTPRequest to Consume a JSON Web Service</a>
-                <a href="/topic5">Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</a>
-                <a href="/topic6">DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.</a>
+                <a href="/topic3-4-5-6">JSON Parse, Stringify</a>
+                <a href="/topic3-4-5-6">Using XMLHTTPRequest to Consume a JSON Web Service</a>
+                <a href="/topic3-4-5-6">Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</a>
+                <a href="/topic3-4-5-6">DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.</a>
                 <a href="/CSS-Assignment">Manipulating CSS Class Properties Using JavaScript</a>
                 <a href="/CSS-Assignment">Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript</a>
                 <a href="/topic9">Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events</a>
