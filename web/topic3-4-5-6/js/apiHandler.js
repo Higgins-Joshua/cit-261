@@ -11,7 +11,7 @@ document.getElementsByClassName('searchUser')[0].onclick = function() {
                 transformRepoData(repoData);
             }
         };
-        repoHttp.open("GET", "/topic3-4-5-6/txt/higgins723Repos.txt", true);
+        repoHttp.open("GET", "/topic3-4-5-6/txt/higgins723Repos.txt", false);
         repoHttp.send();
 
         var xhttp = new XMLHttpRequest();
@@ -53,6 +53,7 @@ function transformData(d, r) {
 }
 
 function transformRepoData(d) {
+    repos = "";
     for (var i in d) {
         repos += `<li><a target="_blank" href="${d[i].html_url}">${d[i].name}</a></li>`;
     }
