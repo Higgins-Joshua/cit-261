@@ -6,8 +6,7 @@
         <div class="row" style="margin-bottom:50px;">
             <div class="col-12">
                 <h3>JSON Parse, Stringify</h3>
-                <h3>Using XMLHTTPRequest to Consume a JSON Web Service</h3>
-                <h3>Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</h3>
+                <h3>Using XMLHTTPRequest to Consume a JSON Web Service</h3>                
                 <h3>DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.</h3>
                 <hr/>
                 <img class="img-fluid" src="/topic3-4-5-6/img/github-logo.png"/>

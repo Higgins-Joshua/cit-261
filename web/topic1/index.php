@@ -4,7 +4,6 @@
     <div class="row" style="margin-bottom:50px;">
         <div class="col-12">
             <h3>Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</h3>
-            <h3>Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h3>
             <hr/>
             <div class="text-center">
                 <h3>Ball Clock</h3>
