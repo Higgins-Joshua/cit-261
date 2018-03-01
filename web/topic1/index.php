@@ -51,6 +51,6 @@
   <!-- end container -->
 </div>
 
-<script src="/topic1-2/js/ballClock.js"></script>
+<script src="/topic1/js/ballClock.js"></script>
 
 <?php include("../includes/footer.php");?>

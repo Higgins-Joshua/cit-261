@@ -11,7 +11,7 @@ document.getElementsByClassName('searchUser')[0].onclick = function() {
                 transformRepoData(repoData);
             }
         };
-        repoHttp.open("GET", "/topic3-4-5-6/txt/higgins723Repos.txt", false);
+        repoHttp.open("GET", "/topic3-4-6/txt/higgins723Repos.txt", false);
         repoHttp.send();
 
         var xhttp = new XMLHttpRequest();
@@ -21,7 +21,7 @@ document.getElementsByClassName('searchUser')[0].onclick = function() {
                 transformData(data, repos);
             }
         };
-        xhttp.open("GET", "/topic3-4-5-6/txt/higgins723.txt", true);
+        xhttp.open("GET", "/topic3-4-6/txt/higgins723.txt", true);
         xhttp.send();
     }
 }
