@@ -1,0 +1,29 @@
+.greenSqr {
+    background-color: green;
+}
+
+.blueSqr {
+    background-color: blue;
+}
+
+.redSqr {
+    background-color: red;
+}
+
+.yellowSqr {
+    background-color: yellow;
+}
+
+.orangeSqr {
+    background-color: orange;
+}
+
+.blackSqr {
+    background-color: black;
+}
+
+.sqr {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
